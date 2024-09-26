@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones</title>
+    <link rel="stylesheet" href="./Main2.css">
+</head>
+<body>
+    <header>
+        <h1 class="nav-btn" data-filter="all">Ejercicios De Logica</h1> <nav><a class="nav-btn" data-filter="factorial">Factorial</a><a class="nav-btn" data-filter="nMayor">Numero Mayor</a><a class="nav-btn" data-filter="SortA">Ordenar Array</a><a class="nav-btn" data-filter="Afiltrar">Filtrar</a><a class="nav-btn" data-filter="SumarA">Sumar Numeros</a></nav>  <button id="modo-oscuro"></button>
+        <select name="" id="selectNav">
+            <option value="">Ejercicio</option>
+            <option value="factorial">Factorial</option>
+            <option value="nMayor">Mayor</option>
+            <option value="SortA">Ordenar</option>
+            <option value="Afiltrar">Filtrar</option>
+            <option value="SumarA">Sumar</option>
+        </select>
+    </header>
+    <section>
+        <h2 class="titulo factorial">Factorial</h2>
+    <div class="container factorial">
+        <input type="number" id="factorialInput" placeholder="Factorial">
+        <br>
+        <button onclick="calcularFactorial()" class="boton">Factorial</button>
+        <div id="resultadoContainer1"></div>
+    </div>
+    </section>
+    <section>
+        <h2 class="titulo nMayor">Numero Mayor</h2>
+    <div class="container nMayor">
+        <input type="text" id="numeroMayorInput" placeholder="separados por comas para Mayor">
+        <br>
+        <button onclick="encontrarMayor()" class="boton">Número Mayor</button>
+        <div id="resultadoContainer2"></div>
+    </div>
+    </section>
+    <section>
+        <h2 class="titulo SortA">Ordenar Array</h2>
+    <div class="container SortA">
+        <input type="text" id="ordenarArrayInput" placeholder="Números separados por comas para Ordenar">
+        <br>
+        <button onclick="ordenarArray()" class="boton">Ordenar Array</button>
+        <div id="resultadoContainer3"></div>
+    </div>
+    </section>
+    <section>
+        <h2 class="titulo Afiltrar">Filtrar</h2>
+    <div class="container Afiltrar">
+        <input type="number" id="filtrarNumerosValor" placeholder="Valor para Filtrar">
+        <input type="text" id="filtrarNumerosArreglo" placeholder="Números separados por comas para Filtrar">
+        <br>
+        <button onclick="filtrarNumeros()" class="boton">Filtrar</button>
+        <div id="resultadoContainer4"></div>
+    </div>
+    </section>
+    <section>
+        <h2 class="titulo SumarA">Sumar Array</h2>
+    <div class="container SumarA">
+        <input type="text" id="sumarNumerosInput" placeholder="Números separados por comas para Sumar">
+        <br>
+        <button onclick="sumarTodosLosNumeros()" class="boton">Sumar Todos Los Numeros</button>
+        <div id="resultadoContainer5"></div>
+    </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p id="textModal"></p>
+            <span class="close">&times;</span>
+        </div>
+    <script src="./Ej2.js"></script>
+</body>
+</html>
